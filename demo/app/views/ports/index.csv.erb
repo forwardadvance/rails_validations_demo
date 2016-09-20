@@ -1,0 +1,4 @@
+Lat, Lng, Name, Weather, Description
+<% @ports.each do |port| %>
+  <%= port.lat %>, <%= port.lng %>, <%= port.name %>, <%= port.weather %>, <%= port.description %>
+<% end %>

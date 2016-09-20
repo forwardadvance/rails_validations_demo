@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @hamster.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @hamster.lng %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hamster.name %>
+</p>
+
+<p>
+  <strong>Weather:</strong>
+  <%= @hamster.weather %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hamster.description %>
+</p>
+
+<%= link_to 'Edit', edit_hamster_path(@hamster) %> |
+<%= link_to 'Back', hamsters_path %>

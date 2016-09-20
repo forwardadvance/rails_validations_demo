@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>My Lat:</strong>
+  <%= @port.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @port.lng %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @port.name %>
+</p>
+
+<p>
+  <strong>Weather:</strong>
+  <%= @port.weather %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @port.description %>
+</p>
+
+<p>
+  <strong>Cat:</strong>
+  <%= @port.cats %>
+</p>
+
+<%= link_to 'Edit', edit_port_path(@port) %> |
+<%= link_to 'Back', ports_path %>

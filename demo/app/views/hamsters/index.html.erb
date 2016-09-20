@@ -1,0 +1,33 @@
+<h1>Listing hamsters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Lng</th>
+      <th>Name</th>
+      <th>Weather</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hamsters.each do |hamster| %>
+      <tr>
+        <td><%= hamster.lat %></td>
+        <td><%= hamster.lng %></td>
+        <td><%= hamster.name %></td>
+        <td><%= hamster.weather %></td>
+        <td><%= hamster.description %></td>
+        <td><%= link_to 'Show', hamster %></td>
+        <td><%= link_to 'Edit', edit_hamster_path(hamster) %></td>
+        <td><%= link_to 'Destroy', hamster, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hamster', new_hamster_path %>
